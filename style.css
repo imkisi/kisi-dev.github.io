@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@font-face {
+    font-family: "Gotham";
+    src: url(Assets/Gotham.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+}
+p {
+    color: #3a3a3a;
+    font: 500 14px "Plus Jakarta Sans";
+}
+nav {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    bottom: 30px;
+    right: 50vw;
+    transform: translateX(50%);
+    z-index: 9;
+}
+.nav-menu {
+    max-width: 390px;
+    height: 64px;
+    margin: auto;
+    background: #F6F6F6;
+    border: 1px solid #F3F3F3;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 17px 8px rgba(173,182,200,0.25);
+}
+.nav-menu, .nav, .nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu .nav-ico {
+    width: 63px;
+    height: 35px;
+    margin-left: 8px;
+}
+.nav ul {
+    gap: 6px;
+}
+.nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 37px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.nav ul li img {
+    width: 20px;
+    height: 20px;
+}
+ul li a {
+    color: #3a3a3a;
+    font: 400 14px "Plus Jakarta Sans";
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+.active, a {
+    background-color: #111721 !important;
+    color: #ffffff !important;
+}
+.active img, .toggle-key img {
+    filter: invert(100%);
+}
+.toggle-key {
+    width: 44px;
+    height: 44px;
+    padding: auto;
+    background-color: #3563F3;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.toggle-key:hover {
+    background-color: #134aee;
+}
+.toggle-key img {
+    width: 24px;
+    height: 24px;
+}
+.con-toggle {
+    max-width: 390px;
+    height: 179px;
+    margin: auto;
+    margin-bottom: 12px;
+    background: #F6F6F6;
+    border: 1px solid #F3F3F3;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 35px 12px;
+    box-shadow: 0px 0px 17px 8px rgba(173,182,200,0.25);
+}
+.con-toggle button {
+    width: 50%;
+    padding: 0 22px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background: transparent;
+}
+.con-toggle button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(29%) sepia(82%) saturate(2251%) hue-rotate(219deg) brightness(97%) contrast(95%);
+}
+p {
+    max-width: 465px;
+    color: #3a3a3a;
+    font: 500 14px "Plus Jakarta Sans";
+    text-align: center;
+}
+.hero-badge p {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 20px;
+    border: 1px solid #3563f3;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 105px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 span {
+    color: #BDBDBD !important;
+}
+.primary-btn{
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #3563f3;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.primary-btn:hover {
+    background-color: #134aee;
+}
+.hero-badge {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.con-hero-det {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+hr {
+    border: 1px dashed rgba(89,173,255,0.57);
+}
+.hero, .works {
+    width: 100vw;
+    height: fit-content;
+    padding: 0 69px;
+    overflow-x: hidden;
+}
+.con-hero, .con-works {
+    width: 100%;
+    height: fit-content;
+    padding: 0 20px;
+    border-left: 1px dashed rgba(89,173,255,0.57);
+    border-right: 1px dashed rgba(89,173,255,0.57);
+}
+.constructor {
+    width: 100vw;
+    position: relative;
+}
+.item {
+    height: fit-content;
+    position: absolute;
+    z-index: 2;
+}
+.con-works {
+    height: 100svh;
+    background-color: transparent;
+}
+svg {
+    width: 100vw;
+    height: fit-content;
+    position: absolute;
+    z-index: 1;
+    overflow-x: hidden;
+}

@@ -3,12 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Primary Meta Tags -->
+    <title>KiSI - Portfolio</title>
+    <meta name="title" content="KiSI - Portfolio" />
+    <meta name="description" content="A portfolio by Bagas Dwi. I love anything related to art, not to be the best but to be unique." />
+    <meta name="keywords" content="kisi,kisidev,kisiisadev,sketch,design,develop">
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://kisi.is-a.dev" />
+    <meta property="og:title" content="KiSI - Portfolio" />
+    <meta property="og:description" content="A portfolio by Bagas Dwi. I love anything related to art, not to be the best but to be unique." />
+    <meta property="og:image" content="Assets/Cover.avif" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://kisi.is-a.dev" />
+    <meta property="twitter:title" content="KiSI - Portfolio" />
+    <meta property="twitter:description" content="A portfolio by Bagas Dwi. I love anything related to art, not to be the best but to be unique." />
+    <meta property="twitter:image" content="Assets/Cover.avif" />
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/icon.ico">
 </head>
 <body>
-    <h3>Webnya belom kelar, ownernya member</h3>
-    <img style="width: 400px;" src="https://scontent.fsrg3-1.fna.fbcdn.net/v/t39.30808-6/439941705_7784491211612537_4746747856880066593_n.png?stp=dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFcI1gE2onXrZ40cIrsl05zWg5QjztinStaDlCPO2KdKxANhwjl10U1THJ5BwK7u2S04hjwcR-_8Wsu-01-_t0x&_nc_ohc=qQvuXv4L6j4Q7kNvgGnuVpO&_nc_zt=23&_nc_ht=scontent.fsrg3-1.fna&oh=00_AfCpM0XiCjY1mxsytXsVGrUzXuHwhk4Y6VD40d2r9qkbDg&oe=6637E7E6" alt="">
-    <p>Informasi komis masih di web lama</p>
-    <a href="https://shirro.my.id">https://shiro.my.id</a>
+    <nav>
+        <div class="nav-toggle" id="toggle" style="display: none;">
+            <div class="con-toggle">
+                <button class="toggle-btn">
+                    <p>Vgen</p>
+                    <img src="Assets/arrow-right.svg" alt="" srcset="">
+                </button>
+                <button class="toggle-btn">
+                    <p>Github</p>
+                    <img src="Assets/arrow-right.svg" alt="" srcset="">
+                </button>
+                <button class="toggle-btn">
+                    <p>Dribbble</p>
+                    <img src="Assets/arrow-right.svg" alt="" srcset="">
+                </button>
+                <button class="toggle-btn">
+                    <p>Behance</p>
+                    <img src="Assets/arrow-right.svg" alt="" srcset="">
+                </button>
+                <button class="toggle-btn">
+                    <p>Facebook</p>
+                    <img src="Assets/arrow-right.svg" alt="" srcset="">
+                </button>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <img src="Assets/KiSI@2x.png" class="nav-ico">
+            <div class="nav">
+                <ul>
+                    <li class="active">
+                        <img src="Assets/home.svg" alt="" srcset="">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <img src="Assets/box.svg" alt="" srcset="">
+                    </li>
+                    <button class="toggle-key" id="toggle-key" onclick="navToggle()">
+                        <img src="Assets/add.svg" id="add">
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="con-hero">
+            <div class="con-hero-det">
+                <div class="hero-badge">
+                    <p>Illustration</p>
+                    <p>Front-End</p>
+                    <p>Visual Design</p>
+                </div>
+                <div class="hero-text">
+                    <h1>Moving <span>Scratch</span><br><span>Stay</span> Creative</h1>
+                </div>
+                <p>I'm passionate about crafting designs that are both visually appealing and strategically effective, transforming random ideas into compelling visuals.</p>
+                <button class="primary-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div class="constructor">
+        <div class="item">
+            <section class="works">
+            <div class="con-works">
+                <div class="conworks-det"></div>
+            </div>
+        </section>
+
+        <hr>
+        
+        </div>
+
+        <svg 
+            width="1411.652" 
+            height="2099.398" 
+            viewBox="0 0 1411.652 2099.398" 
+            fill="none" 
+            stroke="none" 
+            version="1.1" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            xmlns="http://www.w3.org/2000/svg"
+            class="squiggle"
+            >
+                <path id="Path" 
+                d="M0 3.50732C0 3.50732 486.713 -47.5446 513.153 239.898C539.592 527.341 164.608 579.619 209.152 747.398C253.695 915.178 566.056 747.469 875.152 747.398C1184.25 747.328 1352 1017.28 1006.15 1279.4C660.305 1541.52 772.602 1850.76 922.152 1947.9C1071.7 2045.03 1396.65 2084.4 1396.65 2084.4" 
+                style="fill:none;stroke-width:15;stroke:#536DFE;mix-blend-mode:normal;"
+                stroke-linejoin="round"
+                stroke-linecap="round"/>
+        </svg>
+    </div>
+    
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
 </body>
 </html>
