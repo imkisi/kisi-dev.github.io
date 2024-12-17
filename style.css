@@ -24,6 +24,9 @@ h1 {
     position: relative;
     z-index: 2;
 }
+.br {
+    display: none;
+}
 h2 {
     width: fit-content;
     font-size: 2vw;
@@ -150,8 +153,15 @@ h3 {
     width: 100%;
     gap: 20px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.gallery {
+    flex: 1 1 30%;
+    z-index: 5;
+}
+.gallery:hover {
+    z-index: 10;
 }
 .gallery img {
     width: 100%;
@@ -163,6 +173,7 @@ h3 {
 .gallery img:hover {
     filter: saturate(100%);
     transition: 0.5s ease-in-out;
+    box-shadow: 0px 11px 22px rgba(100,100,100,0.05);
 }
 .about {
     width: 100vw;
@@ -188,7 +199,15 @@ h3 {
 }
 
 @media screen and (max-width: 1280px) {
-    .gallery:nth-child(3) {
-        display: none !important;
+    .gallery {
+        flex: 1 1 48%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .br {
+        display: block;
+    }
+    .gallery {
+        flex: 1 1 50%;
     }
 }

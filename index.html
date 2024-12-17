@@ -26,13 +26,15 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-constructor">
             <div class="con-hero">
-                <h1>kisihere</h1>
+                <h1>kisi<br class="br">here</h1>
                 <div class="passion">
                     <h2>Illustration</h2>
                     <h2>Front End</h2>
@@ -52,28 +54,37 @@
             <div class="nav-menu">
                 <ul>
                     <li>
-                        <a href="#" class="active">Home</a>
-                        <a href="#">Works</a>
-                        <a href="#">About</a>
+                        <a href="#home" class="active">Home</a>
+                        <a href="#works">Works</a>
+                        <a href="#about">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="works">
+    <section class="works" id="works">
         <div class="works-constructor">
             <div class="con-works">
                 <h3 class="sub-title">Recent Works</h3>
                 <div class="showcase">
                     <div class="gallery" data-tilt>
-                        <img src="Assets/illust1.webp" alt="" srcset="">
+                        <img src="Assets/ui1.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="200">
                     </div>
                     <div class="gallery" data-tilt>
-                        <img src="Assets/illust2.webp" alt="" srcset="">
+                        <img src="Assets/illust1.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="300">
                     </div>
                     <div class="gallery" data-tilt>
-                        <img src="Assets/illust3.webp" alt="" srcset="">
+                        <img src="Assets/ui2.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="400">
+                    </div>
+                    <div class="gallery" data-tilt>
+                        <img src="Assets/illust2.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="200">
+                    </div>
+                    <div class="gallery" data-tilt>
+                        <img src="Assets/d1.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="300">
+                    </div>
+                    <div class="gallery" data-tilt>
+                        <img src="Assets/illust3.webp" alt="" srcset="" data-aos="fade-up" data-aos-delay="400">
                     </div>
                 </div>
             </div>
@@ -102,5 +113,9 @@
     <svg _ngcontent-pnb-c22="" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern _ngcontent-pnb-c22="" id="a" width="91" height="8" patternUnits="userSpaceOnUse"><g _ngcontent-pnb-c22="" clip-path="url(#clip0_2426_11367)"><path _ngcontent-pnb-c22="" d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="#E1E3E1" stroke-linecap="square"></path></g></pattern><rect _ngcontent-pnb-c22="" width="100%" height="100%" fill="url(#a)"></rect></svg>
 
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script>
+        AOS.init();
+        window.sr = ScrollReveal({ reset: true });
+    </script>
 </body>
 </html>

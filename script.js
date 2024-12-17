@@ -5,24 +5,22 @@ window.addEventListener('blur',function(){
     this.document.title="KiSI - Sketch, Design, Develop";
 })
 
-function navToggle() {
-    var x = document.getElementById('toggle');
-    var y = document.getElementById('add');
-    if (x.style.display === "none") {
-        setTimeout(function () {
-            x.style.display = "block";
-            y.style.rotate = "135deg";
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('ul li a');
 
-            x.style.transitionDuration = "display 2.5s ease-in";
-            y.style.transitionDuration = "transform 2.5s ease-in";
-        }, 100)
-    } else {
-        setTimeout(function () {
-            x.style.display = "none";
-            y.style.rotate = "0deg";
+    const currentSection = sections.entries().find(([index, section]) => {
+        const sectionTop = section.offsetTop;
+        return window.scrollY >= sectionTop - 100;
+    });
 
-            x.style.transitionDuration = "display 2.5s ease-in";
-            y.style.transitionDuration = "transform 2.5s ease-in";
-        }, 100)
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    if (currentSection) {
+        const currentSectionId = sections[currentSection[0]].id;
+        const currentNavLink = document.querySelector(`nav a[href="#${currentSectionId}"]`);
+        currentNavLink.classList.add('active');
     }
-}
+});
