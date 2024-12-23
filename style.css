@@ -161,7 +161,7 @@ h3 {
     z-index: 5;
 }
 .gallery:hover {
-    z-index: 10;
+    z-index: 8;
 }
 .gallery img {
     width: 100%;
@@ -291,6 +291,52 @@ h4 {
     background-color: #522A6F;
     border-radius: 30px;
     color: #ffffff;
+}
+footer {
+    width: 100vw;
+    height: fit-content;
+    padding: 0 69px;
+}
+.foo-constructor {
+    padding: 60px 0;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foo-content {
+    margin-bottom: 60px;
+    background-color: #222023;
+    border-radius: 28px;
+    padding: 40px 35px;
+}
+.foo-t {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 200px;
+}
+.ta, .tb, .tc {
+    width: 15px;
+    height: 15px;
+    border-radius: 16px;
+}
+.ta{
+    background-color: #F8ECFF;
+}
+.tb{
+    background-color: #DDAAFF;
+}
+.tc{
+    background-color: #E040FB;
+}
+.right h3, .right p {
+    color: #ffffff;
+}
+.right .xa {
+    color: #E040FB;
 }
 
 @media screen and (max-width: 1280px) {

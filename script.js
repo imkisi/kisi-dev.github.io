@@ -7,11 +7,15 @@ window.addEventListener('blur',function(){
 
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('ul li a');
+    const navLinks = document.querySelectorAll('nav ul li a');
 
-    const currentSection = sections.entries().find(([index, section]) => {
+    let currentSection = null;
+
+    sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        return window.scrollY >= sectionTop - 100;
+      if (window.scrollY >= sectionTop - 100) { // Adjust offset as needed
+        currentSection = section;
+        }
     });
 
     navLinks.forEach(link => {
@@ -19,8 +23,8 @@ window.addEventListener('scroll', () => {
     });
 
     if (currentSection) {
-        const currentSectionId = sections[currentSection[0]].id;
-        const currentNavLink = document.querySelector(`nav a[href="#${currentSectionId}"]`);
-        currentNavLink.classList.add('active');
+        const currentSectionId = currentSection.getAttribute('id');
+        const activeLink = document.querySelector(`nav a[href="#${currentSectionId}"]`);
+        activeLink.classList.add('active');
     }
 });
