@@ -217,19 +217,20 @@ h3 .del {
     border-radius: 30px;;
 }
 h3 .a{
-    border: 1px solid #522A6F;
-    color: #522A6F;
+    border: 1px solid #9146c6;
+    color: #9146c6;
 }
 h3 .b{
-    background-color: #522A6F;
-    color: #ffffff;
+    background-color: #f8fa4c;
+    color: #000000;
 }
 h3 .c{
-    background-color: #DDAAFF;
-    color: #522A6F;
+    background-color: #8236FB;
+    color: #ffffff;
 }
 h3 .d{
-    border: 1px solid #522A6F;
+    border: 1px solid #E75D50;
+    color: #E75D50;
 }
 h3 .ext {
     width: 54px;
@@ -339,21 +340,101 @@ footer {
     color: #E040FB;
 }
 
+@media screen and (min-width: 1920px) {
+    section, footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+    }
+    .con-nav, .works-constructor, .about-constructor, .foo-constructor {
+        max-width: 2000px;
+        padding: auto;
+    }
+}
 @media screen and (max-width: 1280px) {
     .gallery {
         flex: 1 1 48%;
     }
 }
 @media screen and (max-width: 960px) {
+    .hero-constructor {
+        justify-content: flex-end;
+        padding-bottom: 120px;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 40vw;
+        line-height: 35vw;
+        letter-spacing: -14px;
+    }
+    .con-hero {
+        padding: 20px 0;
+    }
+    .con-hero-det {
+        justify-content: flex-start;
+        padding: 0 8px;
+    }
+    .overview {
+        width: 100%;
+    }
+    .works {
+        margin: 0;
+    }
+    .br {
+        display: block;
+    }
     .detail-parent {
         flex-direction: column;
     }
 }
 @media screen and (max-width: 720px) {
+    section, nav, footer {
+        padding: 0 20px !important;
+    }
+    nav {
+        bottom: 30px;
+        left: auto !important; 
+        right: auto !important; 
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    h1 {
+        font-size: 42vw;
+        letter-spacing: -5px;
+    }
+    h2 {
+        font-size: 14px;
+        padding: 3vw 6vw;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 40px !important;
+    }
+    h3 .ext {
+        height: 24px;
+        width: 24px;
+        margin-bottom: -3px;
+    }
+    h3 .sub, h3 .del {
+        padding: 0 12px 3.4px 12px;
+    }
+    .con-nav img {
+        display: none;
+    }
     .br {
         display: block;
     }
+    .showcase {
+        gap: 5px;
+    }
     .gallery {
         flex: 1 1 50%;
+    }
+    .profile, .affiliation, .experience {
+        padding: 24px;
     }
 }
