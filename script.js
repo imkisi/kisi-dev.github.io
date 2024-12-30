@@ -4,7 +4,9 @@ window.addEventListener('focus',function(){
 window.addEventListener('blur',function(){
     this.document.title="KiSI - Sketch, Design, Develop";
 })
-
+window.addEventListener('contextmenu', function (e) { 
+    e.preventDefault(); 
+}, false);
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav ul li a');
