@@ -16,11 +16,11 @@ body {
 h1 {
     width: 100%;
     height: auto;
-    font-size: 26vw;
+    font-size: 25vw;
     font-family: "Plus Jakarta Sans";
     font-weight: 700;
     color: #DDAAFF;
-    letter-spacing: -14px;
+    letter-spacing: -15px;
     position: relative;
     z-index: 2;
 }
@@ -365,7 +365,7 @@ footer {
         overflow: hidden;
     }
     h1 {
-        font-size: 40vw;
+        font-size: 38vw;
         line-height: 35vw;
         letter-spacing: -14px;
     }
@@ -405,7 +405,7 @@ footer {
     }
     h1 {
         font-size: 42vw;
-        letter-spacing: -5px;
+        letter-spacing: -10px;
     }
     h2 {
         font-size: 14px;
